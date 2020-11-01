@@ -1,0 +1,9 @@
+---
+language: php
+php: 7.1
+addons:
+    apt:
+        packages:
+            - language-pack-fr
+install: composer install
+after_success: bash <(curl -s https://codecov.io/bash)
